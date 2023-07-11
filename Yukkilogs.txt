@@ -1,0 +1,7 @@
+[10-Jul-23 10:10:00 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[10-Jul-23 10:10:00 - INFO] - YukkiMusic.misc - Database Initialized.
+[10-Jul-23 10:10:02 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[10-Jul-23 10:10:02 - INFO] - YukkiMusic.core.bot - Starting Bot
+[10-Jul-23 10:10:07 - INFO] - YukkiMusic.core.bot - MusicBot Started as 𝙎𝙏𝙀𝙏𝘾𝙃𝙁𝙔
+[10-Jul-23 10:10:08 - INFO] - Yukkimusic.plugins - Successfully Imported Modules 
+[10-Jul-23 10:10:08 - INFO] - YukkiMusic.core.userbot - Starting Assistant Clients
