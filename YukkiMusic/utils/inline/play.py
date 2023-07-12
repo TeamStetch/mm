@@ -14,25 +14,25 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
     if 0 < anon <= 10:
-        bar = "◉—————————"
+        bar = "▰▱▱▱▱▱▱▱▱▱"
     elif 10 < anon < 20:
-        bar = "—◉————————"
+        bar = "▰▰▱▱▱▱▱▱▱▱"
     elif 20 <= anon < 30:
-        bar = "——◉———————"
+        bar = "▰▰▰▱▱▱▱▱▱▱"
     elif 30 <= anon < 40:
-        bar = "———◉——————"
+        bar = "▰▰▰▰▰▱▱▱▱▱"
     elif 40 <= anon < 50:
-        bar = "————◉—————"
+        bar = "▰▰▰▰▰▰▱▱▱▱"
     elif 50 <= anon < 60:
-        bar = "—————◉————"
+        bar = "▰▰▰▰▰▰▰▱▱▱"
     elif 60 <= anon < 70:
-        bar = "——————◉———"
+        bar = "▰▰▰▰▰▰▰▰▱▱"
     elif 70 <= anon < 80:
-        bar = "———————◉——"
+        bar = "▰▰▰▰▰▰▰▰▰▱"
     elif 80 <= anon < 95:
-        bar = "————————◉—"
+        bar = "▰▰▰▰▰▰▰▰▰▰"
     else:
-        bar = "—————————◉"
+        bar = "▰▰▰▰▰▰▰▰▰▰"
 
     buttons = [
         [
@@ -57,10 +57,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             ),
         ],[
             InlineKeyboardButton(
-                text="GROUP", url="https://t.me/TeamStetch"
+                text="𝑺𝑼𝑷𝑷𝑶𝑹𝑻", url="https://t.me/STETCHFY"
             ),
             InlineKeyboardButton(
-                text="STETCH", url="https://t.me/Stetch"
+                text="𝙎𝙏𝙀𝙏𝘾𝙃 🪐", url="https://t.me/Stetch"
          )
         ],
         [
@@ -102,28 +102,30 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="END",
-                callback_data=f"ADMIN Stop|{chat_id}",
+                text="PAUSE ▢", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="RESUME",
+                text="RESUME ▷ ",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="PAUSE",
-                callback_data=f"ADMIN Pause|{chat_id}",
+                text=" SKIP ▷▷ ", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="STOP II", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],[
             InlineKeyboardButton(
-                text="channel", url="https://t.me/N_G_12"
+                text="𝑺𝑼𝑷𝑷𝑶𝑹𝑻", url="https://t.me/STETCHFY"
             ),
             InlineKeyboardButton(
-                text="group", url="https://t.me/Ng_333"
-            )
+                text="𝙎𝙏𝙀𝙏𝘾𝙃 🪐", url="https://t.me/Stetch"
+         )
         ],
         [
             InlineKeyboardButton(
-                text="𝖥𝗈𝗋 ᥲ️ᖴY᥆ꪀᥲ️ . 💸 ˼ ", url="https://t.me/Q_XUQ"
+                text=_["S_B_5"],
+                url=f"https://t.me/STETCHFYBOT?startgroup=true",
             )
         ],
     ]
@@ -136,8 +138,9 @@ def telegram_markup(_, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(
-                text=_["PL_B_3"], url=f"https://t.me/A_Rn_obot?startgroup=true",
+             InlineKeyboardButton(
+                text=_["S_B_5"],
+                url=f"https://t.me/STETCHFYBOT?startgroup=true",
             ),
         ],
     ]
@@ -163,16 +166,17 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
         ],[
-            InlineKeyboardButton(
-                text="channel", url="https://t.me/stetchfy"
+             InlineKeyboardButton(
+                text="𝑺𝑼𝑷𝑷𝑶𝑹𝑻", url="https://t.me/STETCHFY"
             ),
             InlineKeyboardButton(
-                text="group", url="https://t.me/TeamStetch"
-            )
+                text="𝙎𝙏𝙀𝙏𝘾𝙃 🪐", url="https://t.me/Stetch"
+         )
         ],
         [
             InlineKeyboardButton(
-                text="𝖥𝗈𝗋 ᥲ️ᖴY᥆ꪀᥲ️ . 💸 ˼ ", url="https://t.me/STETCH"
+                text=_["S_B_5"],
+                url=f"https://t.me/STETCHFYBOT?startgroup=true",
             )
         ],
     ]
